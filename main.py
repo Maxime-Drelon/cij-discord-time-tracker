@@ -30,7 +30,7 @@ def fetch_study_hours(driver):
         driver.get('https://cijapanese.com/login')
         time.sleep(5)
 
-        print("Adding session cookie it & refreshing page...")
+        print("Adding session cookie & refreshing page...")
         driver.add_cookie(cij_cookie)
         driver.refresh()
         time.sleep(5)
