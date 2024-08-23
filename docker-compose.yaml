@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  selenium:
+    image: selenium/standalone-firefox
+    container_name: selenium
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4444"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  time-scrapper:
+    build: .
+    container_name: time-scrapper
+    depends_on:
+      selenium:
+        condition: service_healthy
+    restart: unless-stopped
