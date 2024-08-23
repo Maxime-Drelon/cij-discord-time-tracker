@@ -1,6 +1,6 @@
 # Comprehensible Japanese Discord Server Time Tracker
 
-This program uses Selenium to grab your total lifetime study hours from the CIJ website. I couldn’t get the info through a regular request since it’s not included in any of the network requests made while you’re on the dashboard page. Plus, cross-origin requests aren’t allowed, which makes things a bit tricky.
+This very basic script uses Selenium to grab your total lifetime study hours from the CIJ website. I couldn’t get the info through a regular request since it’s not included in any of the network requests made while you’re on the dashboard page. Plus, cross-origin requests aren’t allowed, which makes things a bit tricky.
 
 ## How to Launch
 
